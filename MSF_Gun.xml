@@ -89,8 +89,6 @@
             </FireModes>
 
         <weaponTags>
-
-
             <li>SniperRifle</li>
             <li>RN_M700</li>
             <li>RN_MSF_Marksman</li>
@@ -99,6 +97,55 @@
         <AllowWithRunAndGun>false</AllowWithRunAndGun>
         </Operation>
 
+    <!-- M21 -->
+
+    <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+        <defName>RNGun_M21_DMR</defName>
+        <statBases>
+            <Mass>4.3</Mass>
+            <RangedWeapon_Cooldown>0.6</RangedWeapon_Cooldown>
+            <SightsEfficiency>1.8</SightsEfficiency>
+            <ShotSpread>0.03</ShotSpread>
+            <SwayFactor>1.2</SwayFactor>
+            <Bulk>6.5</Bulk>
+            <WorkToMake>42000</WorkToMake>
+            </statBases>
+        <costList>
+            <Steel>70</Steel>
+            <ComponentIndustrial>3</ComponentIndustrial>
+            </costList>
+        <Properties>
+            <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+            <hasStandardCommand>true</hasStandardCommand>
+            <defaultProjectile>Bullet_762x51mmNATO</defaultProjectile>
+            <burstShotCount>2</burstShotCount>
+            <ticksBetweenBurstShots>30</ticksBetweenBurstShots>
+            <warmupTime>0.3</warmupTime>
+            <range>50</range>
+            <soundCast>RNShot_EBR</soundCast>
+            <soundCastTail>GunTail_Heavy</soundCastTail>
+            <muzzleFlashScale>9</muzzleFlashScale>
+            </Properties>
+
+        <AmmoUser>
+            <magazineSize>20</magazineSize>
+            <reloadTime>2</reloadTime>
+            <ammoSet>AmmoSet_762x51mmNATO</ammoSet>
+            </AmmoUser>
+
+        <FireModes>
+            <aiUseBurstMode>false</aiUseBurstMode>
+            <aiAimMode>AimedShot</aiAimMode>
+            </FireModes>
+
+        <weaponTags>
+
+            <li>RN_M21DMR</li>
+            <li>RN_MSF_Marksman</li>
+            </weaponTags>
+        <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+        <AllowWithRunAndGun>false</AllowWithRunAndGun>
+        </Operation>
 
     <!-- == Shared patches for firearm melee tools == -->
 
