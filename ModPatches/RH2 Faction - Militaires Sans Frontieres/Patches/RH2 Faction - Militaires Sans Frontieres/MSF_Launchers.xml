@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- M16 -->
+
+    <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+        <defName>RNGun_MSF_Railgun</defName>
+        <statBases>
+            <Mass>8</Mass>
+            <RangedWeapon_Cooldown>0.3</RangedWeapon_Cooldown>
+            <SightsEfficiency>1.5</SightsEfficiency>
+            <ShotSpread>0.03</ShotSpread>
+            <SwayFactor>1.2</SwayFactor>
+            <Bulk>11</Bulk>
+            <WorkToMake>75000</WorkToMake>
+            </statBases>
+
+		<costList>
+			<Steel>150</Steel>
+			<ComponentSpacer>2</ComponentSpacer>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+        <Properties>
+            <recoilAmount>1.3</recoilAmount>
+            <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+            <hasStandardCommand>true</hasStandardCommand>
+            <defaultProjectile>Bullet_12mmRailgun_Sabot</defaultProjectile>
+            <warmupTime>4</warmupTime>
+            <range>50</range>
+            <soundCast>RN_MSFRailgunShot</soundCast>
+            <soundCastTail>GunTail_Heavy</soundCastTail>
+				<targetParams>
+					<canTargetLocations>false</canTargetLocations>
+				</targetParams>
+				<muzzleFlashScale>15</muzzleFlashScale>
+            </Properties>
+
+        <AmmoUser>
+            <magazineSize>5</magazineSize>
+            <reloadTime>4</reloadTime>
+            <ammoSet>AmmoSet_12mmRailgun</ammoSet>
+            </AmmoUser>
+
+        <FireModes>
+            <aiAimMode>AimedShot</aiAimMode>
+            </FireModes>
+
+        <weaponTags>
+			<li>RN_MSFRailgun</li>
+            </weaponTags>
+			<researchPrerequisite>MicroelectronicsBasics</researchPrerequisite>
+        </Operation>
+
+    <!-- == Shared patches for firearm melee tools == -->
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+            defName="RNGun_MSF_Railgun"
+            ]/tools
+            </xpath>
+        <value>
+            <tools>
+                <li Class="CombatExtended.ToolCE">
+                    <label>stock</label>
+                    <capacities>
+                        <li>Blunt</li>
+                        </capacities>
+                    <power>8</power>
+                    <cooldownTime>1.55</cooldownTime>
+                    <chanceFactor>1.5</chanceFactor>
+                    <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+                    <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+                    </li>
+                <li Class="CombatExtended.ToolCE">
+                    <label>barrel</label>
+                    <capacities>
+                        <li>Blunt</li>
+                        </capacities>
+                    <power>5</power>
+                    <cooldownTime>2.02</cooldownTime>
+                    <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+                    <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+                    </li>
+                <li Class="CombatExtended.ToolCE">
+                    <label>muzzle</label>
+                    <capacities>
+                        <li>Poke</li>
+                        </capacities>
+                    <power>8</power>
+                    <cooldownTime>1.55</cooldownTime>
+                    <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+                    <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+                    </li>
+                </tools>
+            </value>
+        </Operation>
+    </Patch>
