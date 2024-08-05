@@ -383,7 +383,7 @@
 		<li IfModActive="RH2.Faction.Utilitarian">ModPatches/RH2 Faction - Utilitarian</li>
     <li IfModActive="RH2.Faction.VOID">ModPatches/RH2 Faction - VOID</li>
 
-		<li IfModActive="RH2.Faction.Militaires.Sans.Frontieres">ModPatches/RH2 Faction - MSF</li>
+		<li IfModActive="RH2.Faction.Militaires.Sans.Frontieres">ModPatches/RH2 Faction - Militaires Sans Frontieres</li>
 
 		<li IfModActive="RH2.Metal.Gear.Solid">ModPatches/RH2 Metal Gear Solid</li>
 		<li IfModActive="CP.RimmuNation.2.Clothing">ModPatches/RH2 Rimmu-Nation² - Clothing</li>

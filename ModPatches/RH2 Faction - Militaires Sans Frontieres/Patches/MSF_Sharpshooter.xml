@@ -45,7 +45,7 @@
             <li>RN_M1Garand</li>
             <li>RN_MSF_Marksman</li>
             </weaponTags>
-        <researchPrerequisite>GunSmithing</researchPrerequisite>
+        <researchPrerequisite>Gunsmithing</researchPrerequisite>
         <AllowWithRunAndGun>false</AllowWithRunAndGun>
         </Operation>
 
@@ -153,7 +153,7 @@
         <xpath>Defs/ThingDef[
             defName="RNGun_BattleRifle_M1DGarand" or
             defName="RNGun_M700_Sniper" or
-            defName="RNGun_M21_DMR" or
+            defName="RNGun_M21_DMR" 
             ]/tools </xpath>
         <value>
             <tools>
