@@ -152,7 +152,8 @@
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[
             defName="RNGun_BattleRifle_M1DGarand" or
-            defName="RNGun_M700_Sniper"
+            defName="RNGun_M700_Sniper" or
+            defName="RNGun_M21_DMR" or
             ]/tools </xpath>
         <value>
             <tools>
