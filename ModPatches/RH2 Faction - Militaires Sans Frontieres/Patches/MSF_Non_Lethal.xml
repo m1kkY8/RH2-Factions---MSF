@@ -100,8 +100,8 @@
     <Operation Class="PatchOperationReplace">
         <xpath>
             Defs/ThingDef[
-            defName="" or
-            defName="" 
+            defName="RNGun_Mk22HushPuppy_Pistol" or
+            defName="RNGun_MosinNagantNL_BoltAction" 
             ]/tools
             </xpath>
         <value>
@@ -141,5 +141,3 @@
             </value>
         </Operation>
   </Patch>
-
-
