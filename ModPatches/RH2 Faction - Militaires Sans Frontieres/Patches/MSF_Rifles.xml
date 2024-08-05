@@ -157,7 +157,7 @@
             Defs/ThingDef[
             defName="RNGun_MRS-4_Rifle" or
             defName="RNGun_XM16E1_Rifle" or
-            defName="RNGun_CAR15_Rifle" or
+            defName="RNGun_CAR15_Rifle" 
             ]/tools
             </xpath>
         <value>
